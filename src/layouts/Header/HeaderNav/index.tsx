@@ -44,32 +44,26 @@ export const HeaderNav = ({
   const handleClick = (e: React.MouseEvent, idByLink: string): void => {
     e.preventDefault();
 
-    if (homepageRef.current) {
-      setShowNav(false);
-      const sections = Array.from(homepageRef.current?.children);
-      handleScrollToSection(idByLink, sections);
-    }
+    if (!homepageRef.current) return;
+
+    setShowNav(false);
+    const sections = Array.from(homepageRef.current?.children);
+    handleScrollToSection(idByLink, sections);
   };
 
   React.useEffect(() => {
     const handleScroll = (): void => {
       if (!homepageRef.current) return;
 
-      const sectionsWithId = Array.from(homepageRef.current?.children)
-        .filter((section) => section.hasAttribute('id'))
-        .map((section) => {
-          if (section instanceof HTMLElement) {
-            return {
-              section,
-              offset: section.offsetTop - 70,
-            };
-          }
+      const sectionsWithId = Array.from(homepageRef.current?.children).filter(
+        (section) => section.hasAttribute('id'),
+      );
 
-          return section;
-        });
-
-      sectionsWithId.forEach(({ section, offset }) => {
-        if (window.scrollY > offset) {
+      sectionsWithId.forEach((section) => {
+        if (
+          section instanceof HTMLElement &&
+          window.scrollY > section.offsetTop - 70
+        ) {
           nav.forEach((link, index) => {
             if (link === section.id) {
               setCurrentSection(index + 1);
