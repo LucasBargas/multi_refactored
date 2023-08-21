@@ -18,7 +18,7 @@ export const InitialSliderControllerDots = ({
 }: Props): JSX.Element => {
   return (
     <S.InitialSliderControllerDotsContainer idActive={idActive}>
-      {slideItems.map((item, index) => (
+      {slideItems.map((_item, index) => (
         <li
           key={index + 1}
           onClick={() => {
