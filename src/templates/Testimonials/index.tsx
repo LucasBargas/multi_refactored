@@ -1,4 +1,3 @@
-import React from 'react';
 import { TestimonialsContainer } from './styles';
 import Container from '../../components/Container';
 import { Title } from '../../components/Title';

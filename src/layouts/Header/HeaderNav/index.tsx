@@ -24,7 +24,7 @@ export const HeaderNav = ({
   handleOutsideClick,
 }: Props): JSX.Element => {
   const { homepageRef } = useHomepageRef();
-  const [currentSection, setCurrentSection] = React.useState(1);
+  const [currentSection, setCurrentSection] = React.useState<number>(1);
 
   const handleScrollToSection = (
     idByLink: string,

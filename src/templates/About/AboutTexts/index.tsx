@@ -1,4 +1,3 @@
-import React from 'react';
 import * as S from './styles';
 import { BsCheckAll } from 'react-icons/bs';
 import { Button } from '../../../components/Button';

@@ -1,4 +1,3 @@
-import React from 'react';
 import * as S from './styles';
 import { BiBasketball, BiTachometer, BiArch } from 'react-icons/bi';
 import { IoDocumentTextOutline, IoEarthSharp } from 'react-icons/io5';

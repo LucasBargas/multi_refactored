@@ -1,4 +1,3 @@
-import React from 'react';
 import * as S from './styles';
 import { FooterTopInfo } from './FooterTopInfo';
 import { FooterTopForm } from './FooterTopForm';

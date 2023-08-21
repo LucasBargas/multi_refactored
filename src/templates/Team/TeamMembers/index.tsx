@@ -1,4 +1,3 @@
-import React from 'react';
 import * as S from './styles';
 import { team } from '../../../utils/team';
 import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';

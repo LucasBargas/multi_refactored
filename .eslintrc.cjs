@@ -36,5 +36,6 @@ module.exports = {
     '@typescript-eslint/member-delimiter-style': 'off',
     '@typescript-eslint/no-misused-promises': 'off',
     '@typescript-eslint/strict-boolean-expressions': 'off',
+    'react/react-in-jsx-scope': 'off',
   },
 };

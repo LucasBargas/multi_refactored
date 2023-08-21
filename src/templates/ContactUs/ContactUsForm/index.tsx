@@ -1,4 +1,3 @@
-import React from 'react';
 import * as S from './styles';
 import { Button } from '../../../components/Button';
 import { Theme } from '../../../styles/Theme';

@@ -1,4 +1,3 @@
-import React from 'react';
 import * as S from './styles';
 import { products, type IProduct } from '../../../utils/products';
 import { AiOutlinePlus } from 'react-icons/ai';

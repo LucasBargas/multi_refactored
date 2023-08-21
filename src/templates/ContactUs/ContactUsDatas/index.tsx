@@ -1,4 +1,3 @@
-import React from 'react';
 import * as S from './styles';
 import { BiMap, BiEnvelope, BiPhoneCall } from 'react-icons/bi';
 

@@ -1,4 +1,3 @@
-import React from 'react';
 import * as S from './styles';
 import bg from '../../assets/images/why-us.jpg';
 import { WhyUsOrderedList } from './WhyUsOrderedList';

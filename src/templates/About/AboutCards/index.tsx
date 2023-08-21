@@ -1,4 +1,3 @@
-import React from 'react';
 import * as S from './styles';
 import { BsEmojiSmile, BsPeople } from 'react-icons/bs';
 import { CgNotes } from 'react-icons/cg';
