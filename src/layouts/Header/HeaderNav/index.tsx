@@ -58,11 +58,7 @@ export const HeaderNav = ({
     const handleScroll = (): void => {
       if (!homepageRef.current) return;
 
-      const sectionsWithId = Array.from(homepageRef.current?.children).filter(
-        (section) => section,
-      );
-
-      sectionsWithId.forEach((section) => {
+      Array.from(homepageRef.current?.children).forEach((section) => {
         if (
           section instanceof HTMLElement &&
           window.scrollY > section.offsetTop - 70
