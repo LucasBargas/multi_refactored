@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React from 'react';
 import * as S from './styles';
 import { BsXLg } from 'react-icons/bs';
@@ -24,7 +25,9 @@ export const HeaderNav = ({
   handleOutsideClick,
 }: Props): JSX.Element => {
   const { homepageRef } = useHomepageRef();
-  const [currentSection, setCurrentSection] = React.useState<number>(1);
+  const [currentSection, setCurrentSection] = React.useState<
+  number | undefined
+  >(1);
 
   const handleScrollToSection = (
     idByLink: string,
@@ -56,7 +59,7 @@ export const HeaderNav = ({
       if (!homepageRef.current) return;
 
       const sectionsWithId = Array.from(homepageRef.current?.children).filter(
-        (section) => section.hasAttribute('id'),
+        (section) => section,
       );
 
       sectionsWithId.forEach((section) => {
@@ -69,6 +72,10 @@ export const HeaderNav = ({
               setCurrentSection(index + 1);
             }
           });
+
+          if (!section.hasAttribute('id')) {
+            setCurrentSection(undefined);
+          }
         }
       });
     };

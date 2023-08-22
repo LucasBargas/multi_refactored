@@ -41,6 +41,10 @@ cd multi_refactored
 ```bash
 npm install
 ```
+#### Execute o App
+```bash
+npm run dev
+```
 
 # Autor
 Lucas Bargas da Silva

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const HeaderNav = styled.nav<{
   showNav: boolean;
-  currentSection: number;
+  currentSection: number | undefined;
 }>`
   @media (max-width: 992px) {
     display: flex;
