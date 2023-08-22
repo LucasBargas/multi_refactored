@@ -24,6 +24,13 @@ export const Footer = (): JSX.Element => {
             com base em um layout gratuito disponibilizado na web. Porém, toda a
             codificação é própria.
           </p>
+          <a
+            target="_blank"
+            href="https://github.com/LucasBargas/multi_refactored"
+            rel="noopener noreferrer"
+          >
+            Clique aqui para visualizar o repositório no GitHub
+          </a>
         </S.FooterBottomArea>
       </Container>
     </S.FooterContainer>
